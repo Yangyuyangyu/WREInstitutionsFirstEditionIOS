@@ -1,0 +1,43 @@
+//
+//  PrefixHeader.pch
+//  Institutions
+//
+//  Created by waycubeIOSb on 16/5/31.
+//  Copyright © 2016年 waycubeIOSXN. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#ifdef __OBJC__
+
+#import "UIView+RGSize.h"
+#import "ShareSingle.h"
+#import "CManager.h"
+#import "MBProgressHUD+MJ.h"
+// ...表示宏定义的可变参数
+// __VA_ARGS__:表示函数里面的可变参数
+#ifdef DEBUG // 调试
+
+#define XNLog(...) NSLog(__VA_ARGS__)
+
+#else // 发布
+
+#define XNLog(...)
+
+#endif
+
+#endif
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#define XN_FRAME ([UIScreen mainScreen].applicationFrame)
+#define XN_KeyWindow [UIApplication sharedApplication].keyWindow
+#define XN_WIDTH ([UIScreen mainScreen].bounds.size.width)
+#define XN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+#define XN_kScreen_Frame (CGRectMake(0, 0 ,XN_WIDTH,XN_HEIGHT))
+#define XN_COLOR_RED_MINT ([UIColor colorWithRed:0.898 green:0.251 blue:0.239 alpha:1.000])
+#define ShareS [ShareSingle shareInstance]//单例
+//#define Basicurl @"http://192.168.10.127/operate"
+#define Basicurl @"http://www.weiraoedu.com"
+
+#endif /* PrefixHeader_pch */

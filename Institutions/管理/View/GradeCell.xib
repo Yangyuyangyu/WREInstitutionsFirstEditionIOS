@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="GradeCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wVr-Vs-0wC">
+                        <rect key="frame" x="0.0" y="4" width="320" height="41"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wyd-iA-1gu">
+                                <rect key="frame" x="15" y="10" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xot-o7-4zV">
+                                <rect key="frame" x="285" y="11" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="fpX-pr-7MZ"/>
+                                    <constraint firstAttribute="width" constant="20" id="tOe-EJ-OdH"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="ic_checkbox_false.png"/>
+                                <state key="selected" image="ic_checkbox_ture.png"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wyd-iA-1gu" firstAttribute="centerY" secondItem="wVr-Vs-0wC" secondAttribute="centerY" id="Drb-th-ief"/>
+                            <constraint firstAttribute="trailing" secondItem="xot-o7-4zV" secondAttribute="trailing" constant="15" id="WVv-Qq-iWq"/>
+                            <constraint firstItem="xot-o7-4zV" firstAttribute="centerY" secondItem="wVr-Vs-0wC" secondAttribute="centerY" id="Xhu-yF-rI4"/>
+                            <constraint firstItem="wyd-iA-1gu" firstAttribute="leading" secondItem="wVr-Vs-0wC" secondAttribute="leading" constant="15" id="xOX-CQ-VJK"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.87450980389999999" green="0.87450980389999999" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="wVr-Vs-0wC" secondAttribute="trailing" id="E9D-3D-01c"/>
+                    <constraint firstItem="wVr-Vs-0wC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="PhM-cs-JXm"/>
+                    <constraint firstAttribute="bottom" secondItem="wVr-Vs-0wC" secondAttribute="bottom" constant="4" id="WU5-sN-AiY"/>
+                    <constraint firstItem="wVr-Vs-0wC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="bfH-CZ-XPX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="content" destination="wyd-iA-1gu" id="u3d-r4-Ikb"/>
+                <outlet property="tick" destination="xot-o7-4zV" id="qv9-KO-q1W"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_checkbox_false.png" width="32" height="32"/>
+        <image name="ic_checkbox_ture.png" width="32" height="32"/>
+    </resources>
+</document>

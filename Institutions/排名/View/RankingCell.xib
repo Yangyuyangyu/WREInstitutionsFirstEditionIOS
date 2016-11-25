@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="RankingCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="89"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ad-yf-t3h">
+                        <rect key="frame" x="13" y="32" width="31" height="26"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.92549019610000005" green="0.2901960784" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QPz-g5-Fls">
+                        <rect key="frame" x="13" y="32" width="31" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="26" id="0U8-UX-s4O"/>
+                            <constraint firstAttribute="width" constant="31" id="cSh-mD-1iH"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="edm-aE-4FD">
+                        <rect key="frame" x="52" y="20" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="3HW-ef-9cu"/>
+                            <constraint firstAttribute="height" constant="50" id="HCH-SN-9g4"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E8Q-L6-mmo">
+                        <rect key="frame" x="110" y="20" width="38" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="科目：单福山" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vYP-lc-dFz">
+                        <rect key="frame" x="222" y="36" width="90" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="knQ-mX-CYw">
+                        <rect key="frame" x="110" y="53" width="36" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.92549019610000005" green="0.2901960784" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="knQ-mX-CYw" firstAttribute="leading" secondItem="edm-aE-4FD" secondAttribute="trailing" constant="8" id="3ZL-JZ-3kL"/>
+                    <constraint firstItem="edm-aE-4FD" firstAttribute="leading" secondItem="QPz-g5-Fls" secondAttribute="trailing" constant="8" id="Kz3-gN-xYw"/>
+                    <constraint firstAttribute="trailing" secondItem="vYP-lc-dFz" secondAttribute="trailing" constant="8" id="PaU-Da-1tS"/>
+                    <constraint firstItem="QPz-g5-Fls" firstAttribute="trailing" secondItem="9Ad-yf-t3h" secondAttribute="trailing" id="SHo-xJ-VBa"/>
+                    <constraint firstItem="QPz-g5-Fls" firstAttribute="leading" secondItem="9Ad-yf-t3h" secondAttribute="leading" id="T6Q-5q-SN5"/>
+                    <constraint firstItem="E8Q-L6-mmo" firstAttribute="leading" secondItem="edm-aE-4FD" secondAttribute="trailing" constant="8" id="Tge-Mv-gg2"/>
+                    <constraint firstItem="QPz-g5-Fls" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="13" id="TmN-xr-wPI"/>
+                    <constraint firstItem="vYP-lc-dFz" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="UBn-s9-hhd"/>
+                    <constraint firstAttribute="bottom" secondItem="knQ-mX-CYw" secondAttribute="bottom" constant="19" id="VPD-hB-jZm"/>
+                    <constraint firstItem="edm-aE-4FD" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Zxx-X1-lzk"/>
+                    <constraint firstItem="QPz-g5-Fls" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="cE9-96-SLX"/>
+                    <constraint firstItem="QPz-g5-Fls" firstAttribute="bottom" secondItem="9Ad-yf-t3h" secondAttribute="bottom" id="foT-Ke-H2e"/>
+                    <constraint firstItem="QPz-g5-Fls" firstAttribute="top" secondItem="9Ad-yf-t3h" secondAttribute="top" id="j62-Ig-ODO"/>
+                    <constraint firstItem="E8Q-L6-mmo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="l5e-tk-9rl"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="name" destination="E8Q-L6-mmo" id="hBr-0K-FAS"/>
+                <outlet property="number" destination="9Ad-yf-t3h" id="VHC-AW-H0h"/>
+                <outlet property="pic" destination="edm-aE-4FD" id="6gS-K0-Ijx"/>
+                <outlet property="picNUmber" destination="QPz-g5-Fls" id="uw6-Af-wSP"/>
+                <outlet property="score" destination="knQ-mX-CYw" id="nx0-qT-jkl"/>
+                <outlet property="subject" destination="vYP-lc-dFz" id="afI-43-9Uh"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

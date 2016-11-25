@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ExanResultsCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pWa-Q3-9LA">
+                        <rect key="frame" x="15" y="13" width="36" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="分" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h20-Kg-k6H">
+                        <rect key="frame" x="291" y="13" width="14" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入成绩" textAlignment="right" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="BYP-sN-kW6">
+                        <rect key="frame" x="209" y="13" width="74" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="pWa-Q3-9LA" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="329-ml-DVb"/>
+                    <constraint firstAttribute="trailing" secondItem="h20-Kg-k6H" secondAttribute="trailing" constant="15" id="FGt-rh-71Y"/>
+                    <constraint firstItem="BYP-sN-kW6" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Hfj-UW-onz"/>
+                    <constraint firstItem="h20-Kg-k6H" firstAttribute="leading" secondItem="BYP-sN-kW6" secondAttribute="trailing" constant="8" id="Mjh-H4-1fF"/>
+                    <constraint firstItem="pWa-Q3-9LA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="PQQ-ce-d2s"/>
+                    <constraint firstItem="h20-Kg-k6H" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="gj7-es-c0k"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="name" destination="pWa-Q3-9LA" id="uDR-aD-VXg"/>
+                <outlet property="score" destination="BYP-sN-kW6" id="MuA-sX-sBx"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

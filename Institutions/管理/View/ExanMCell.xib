@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ExanMCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="85"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="84"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NWk-1A-vJT">
+                        <rect key="frame" x="0.0" y="10" width="320" height="74"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="考试课程：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jY8-dE-vmH">
+                                <rect key="frame" x="13" y="10" width="70" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="考试时间：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dpF-Ip-yuI">
+                                <rect key="frame" x="13" y="47" width="70" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k6e-nM-cfl">
+                                <rect key="frame" x="88" y="10" width="36" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhd-Xi-g4U">
+                                <rect key="frame" x="222" y="22" width="90" height="30"/>
+                                <state key="normal" title="录入考试结果">
+                                    <color key="titleColor" red="0.92549019610000005" green="0.2901960784" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2104-02-16 15:54" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g0o-5z-HMm">
+                                <rect key="frame" x="88" y="47" width="118" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="bhd-Xi-g4U" secondAttribute="trailing" constant="8" id="2U0-c8-ZFy"/>
+                            <constraint firstItem="g0o-5z-HMm" firstAttribute="leading" secondItem="dpF-Ip-yuI" secondAttribute="trailing" constant="5" id="GZQ-jd-Yib"/>
+                            <constraint firstItem="g0o-5z-HMm" firstAttribute="centerY" secondItem="dpF-Ip-yuI" secondAttribute="centerY" id="Hgn-gR-k8w"/>
+                            <constraint firstAttribute="bottom" secondItem="dpF-Ip-yuI" secondAttribute="bottom" constant="10" id="LEY-oI-Oov"/>
+                            <constraint firstItem="bhd-Xi-g4U" firstAttribute="centerY" secondItem="NWk-1A-vJT" secondAttribute="centerY" id="UVy-lb-njN"/>
+                            <constraint firstItem="k6e-nM-cfl" firstAttribute="centerY" secondItem="jY8-dE-vmH" secondAttribute="centerY" id="qT2-hk-0Zy"/>
+                            <constraint firstItem="k6e-nM-cfl" firstAttribute="leading" secondItem="jY8-dE-vmH" secondAttribute="trailing" constant="5" id="sYU-NB-Xbr"/>
+                            <constraint firstItem="dpF-Ip-yuI" firstAttribute="leading" secondItem="NWk-1A-vJT" secondAttribute="leading" constant="13" id="tAQ-6x-jrC"/>
+                            <constraint firstItem="jY8-dE-vmH" firstAttribute="leading" secondItem="NWk-1A-vJT" secondAttribute="leading" constant="13" id="uf3-KK-tkD"/>
+                            <constraint firstItem="jY8-dE-vmH" firstAttribute="top" secondItem="NWk-1A-vJT" secondAttribute="top" constant="10" id="wgZ-fp-v1s"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.87450980389999999" green="0.87450980389999999" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="NWk-1A-vJT" secondAttribute="bottom" id="6ln-P2-zm1"/>
+                    <constraint firstItem="NWk-1A-vJT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Ae9-ao-4zO"/>
+                    <constraint firstItem="NWk-1A-vJT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="kRC-Pn-28w"/>
+                    <constraint firstAttribute="trailing" secondItem="NWk-1A-vJT" secondAttribute="trailing" id="pJ2-Bz-ekI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="entering" destination="bhd-Xi-g4U" id="39k-K3-WsY"/>
+                <outlet property="name" destination="k6e-nM-cfl" id="1qZ-B3-hZo"/>
+                <outlet property="time" destination="g0o-5z-HMm" id="Bja-b5-g2e"/>
+            </connections>
+            <point key="canvasLocation" x="392" y="270.5"/>
+        </tableViewCell>
+    </objects>
+</document>
